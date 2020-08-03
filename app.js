@@ -35,7 +35,7 @@ class Products {
   }
 }
 
-// Display Products
+// ------------ Display Products -------------
 class UI {
   displayProducts(products) {
     let result = '';
@@ -188,7 +188,7 @@ class UI {
   }
 }
 
-// Local Storage 
+// ------------------ Local Storage ------------------
 class Storage {
   static saveProducts(products) {
     localStorage.setItem("products", JSON.stringify(products))
@@ -206,7 +206,7 @@ class Storage {
   }
 }
 
-// Event Lisener
+// ---------------- Event Lisener -----------------
 document.addEventListener("DOMContentLoaded", () => {
   const ui = new UI();
   const products = new Products();
